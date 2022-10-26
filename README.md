@@ -27,7 +27,7 @@
 
 завершите транзакцию во второй сессии
 
-##начать новые но уже repeatable read транзации - set transaction isolation level repeatable read;
+## начать новые но уже repeatable read транзации - set transaction isolation level repeatable read;
 в первой сессии добавить новую запись 
  * insert into persons(first_name, second_name) values('sveta', 'svetova');
 сделать select * from persons во второй сессии
