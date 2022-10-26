@@ -1,8 +1,14 @@
 ## Postgre
 ## work_1
 ## выключить auto commit
-сделать в первой сессии новую таблицу и наполнить ее данными create table persons(id serial, first_name text, second_name text); insert into persons(first_name, second_name) values('ivan', 'ivanov'); insert into persons(first_name, second_name) values('petr', 'petrov'); commit;
+сделать в первой сессии новую таблицу и наполнить ее данными 
+ * create table persons(id serial, first_name text, second_name text); 
+ * insert into persons(first_name, second_name) values('ivan', 'ivanov'); 
+ * insert into persons(first_name, second_name) values('petr', 'petrov'); 
+ * commit;
+
 посмотреть текущий уровень изоляции: show transaction isolation level
+
 **-> read committed**
 
 ## начать новую транзакцию в обоих сессиях с дефолтным (не меняя) уровнем изоляции
